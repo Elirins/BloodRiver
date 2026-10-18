@@ -1,0 +1,78 @@
+# Unity 工程 .gitignore
+# 适用版本: Unity 2021.3.29f1c1
+# 说明: Library/Temp/Logs/obj/UserSettings 均为本地生成，上传后他人会自动重新生成
+
+# ---------- Unity 本地生成目录 ----------
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+
+# MemoryCaptures 和 Recordings 体积可能很大，且可能含敏感数据
+/[Mm]emoryCaptures/
+/[Rr]ecordings/
+
+# 未购买的 Asset Store 工具插件（如需要跟踪请删除此行）
+# /[Aa]ssets/AssetStoreTools*
+
+# 自动生成的 JetBrains Rider 插件
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# ---------- IDE / 编译产物 ----------
+.vs/
+.idea/
+.gradle/
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# ---------- 打包产物 ----------
+*.apk
+*.aab
+*.unitypackage
+*.app
+
+# ---------- 场景备份压缩包（不建议入库，建议放 GitHub Releases） ----------
+主场景包.zip
+
+# ---------- 系统垃圾文件 ----------
+.DS_Store
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# ---------- 其他 ----------
+# Unity3D 生成的 meta 文件
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity3D 崩溃报告生成的文件
+sysinfo.txt
+
+# Crashlytics 生成的文件
+crashlytics-build.properties
+
+# 打包的 Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# 临时自动生成的 Android Assets
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
